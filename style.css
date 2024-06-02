@@ -1,0 +1,275 @@
+div {
+  border: 1px solid rgba(0, 0, 0, 0);
+  height: 12vh;
+  width: 32%;
+  background-color: rgba(3,152,158,255);
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin-bottom: 1%;
+}
+
+.Picasso{
+  position: relative;
+  width: 90vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Big{
+  background-color: rgba(3,152,158,255);
+  width: 90vw;
+  height: 40vh;
+  margin-bottom: 1%;
+}
+
+.green{
+  background-color: rgba(201,226,101,255);
+  width: 90vw;
+  height: 4vh;
+  
+}
+
+.Tri{
+  width: 0; 
+  height: 0; 
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  background-color: transparent;
+  border-bottom: 700px solid rgb(191, 29, 29);
+  z-index: 2;
+}
+
+#T1{
+  border-bottom: 590px solid rgba(0,128,55,255);
+  border-left: 280px solid transparent;
+  border-right: 200px solid transparent;
+  position: absolute;
+  top: 11%;
+  right: 23.5%;
+  z-index: 3;
+}
+
+#T2{
+  border-bottom: 400px solid rgba(201,226,101,255);
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  position: absolute;
+  top: 24.8%;
+  right: 8.1%;
+  z-index: 4;
+  
+}
+
+.circles{
+  border-radius: 50%;
+  color: #ff8888;
+  background-color: #ff8888;
+}
+
+#C1{
+  height: 2em;
+  width: 2em;
+  z-index: 2;
+  position: absolute;
+  top: 1%;
+  right: 94%;
+}
+
+#C2{
+  height: 2em;
+  width: 2em;
+  z-index: 2;
+  position: absolute;
+  top: 10.7%;
+  right: 94.2%
+}
+
+#C3{
+  height: 7.5em;
+  width: 7.5em;
+  z-index: 2;
+  position: absolute;
+  top: 2.1%;
+  right: 74%;
+  background-color: #ffde59;
+}
+
+#C4{
+  height: 2em;
+  width: 2em;
+  z-index: 2;
+  position: absolute;
+  background-color: #ffde59;
+  top: 20.2%;
+  right: 83%;
+}
+
+#C5{
+  height: 1.5em;
+  width: 1.5em;
+  z-index: 2;
+  position: absolute;
+  top: 2.1%;
+  right: 61%;
+}
+
+#C6{
+  height: 7.8em;
+  width: 7.8em;
+  z-index: 2;
+  position: absolute;
+  top: 8.3%;
+  right: 65%;
+}
+/* Media Queries */
+@media (max-width: 1024px) {
+  .art-gallery {
+      width: 100%;
+      height: auto;
+  }
+
+  section {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  section div {
+      width: 90%;
+      margin-bottom: 1%;
+  }
+
+  .Big, .green {
+      width: 100%;
+  }
+
+  .Tri, #T1, #T2 {
+      width: 0;
+      height: 0;
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+      border-bottom-width: 350px;
+      top: 20%;
+      right: 25%;
+  }
+
+  #T1 {
+      border-bottom-width: 295px;
+  }
+
+  #T2 {
+      border-bottom-width: 200px;
+      top: 30%;
+      right: 10%;
+  }
+
+  .circles {
+      height: 1em;
+      width: 1em;
+  }
+
+  #C1, #C2, #C3, #C4, #C5, #C6 {
+      height: 1em;
+      width: 1em;
+      top: 10%;
+      right: 80%;
+  }
+
+  #C3 {
+      height: 3.75em;
+      width: 3.75em;
+      top: 2.1%;
+      right: 74%;
+  }
+
+  #C4 {
+      top: 20.2%;
+      right: 83%;
+  }
+
+  #C6 {
+      height: 3.9em;
+      width: 3.9em;
+      top: 8.3%;
+      right: 65%;
+  }
+}
+
+@media (max-width: 480px) {
+  .art-gallery {
+      width: 100%;
+      height: auto;
+  }
+
+  section {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  section div {
+      width: 95%;
+      margin-bottom: 2%;
+  }
+
+  .Big, .green {
+      width: 100%;
+  }
+
+  .Tri, #T1, #T2 {
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom-width: 200px;
+      top: 20%;
+      right: 25%;
+  }
+
+  #T1 {
+      border-bottom-width: 150px;
+  }
+
+  #T2 {
+      border-bottom-width: 100px;
+      top: 30%;
+      right: 10%;
+  }
+
+  .circles {
+      height: 0.5em;
+      width: 0.5em;
+  }
+
+  #C1, #C2, #C3, #C4, #C5, #C6 {
+      height: 0.5em;
+      width: 0.5em;
+      top: 10%;
+      right: 80%;
+  }
+
+  #C3 {
+      height: 2em;
+      width: 2em;
+      top: 2.1%;
+      right: 74%;
+  }
+
+  #C4 {
+      top: 20.2%;
+      right: 83%;
+  }
+
+  #C6 {
+      height: 2.5em;
+      width: 2.5em;
+      top: 8.3%;
+      right: 65%;
+  }
+}
